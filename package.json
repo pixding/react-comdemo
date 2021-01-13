@@ -16,11 +16,27 @@
   "bugs": {
     "url": "https://github.com/pixding/react-comdemo/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix"
+    ],
+    "*.{less}": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
   "homepage": "https://github.com/pixding/react-comdemo#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
     "eslint": "^7.17.0",
@@ -29,8 +45,15 @@
     "eslint-config-recommended": "^4.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
     "typescript": "^4.1.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
