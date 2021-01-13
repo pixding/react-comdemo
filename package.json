@@ -1,0 +1,35 @@
+{
+  "name": "react-comdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixding/react-comdemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixding/react-comdemo/issues"
+  },
+  "homepage": "https://github.com/pixding/react-comdemo#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.17.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.12.11"
+  }
+}
