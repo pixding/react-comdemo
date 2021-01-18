@@ -9,15 +9,16 @@ module.exports = {
         corejs: 3,
       },
     ],
+    ['@babel/plugin-proposal-class-properties', { loose: true }],
   ],
   presets: [
     [
       '@babel/env',
       {
-        modules: 'commonjs',
-        targets: { browsers: pkg.browserslist },
+        modules: false,
         useBuiltIns: 'usage',
         corejs: 3,
+        targets: { node: 'current' },
       },
     ],
     '@babel/typescript',
